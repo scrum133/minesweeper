@@ -1,11 +1,10 @@
 <html>
 	<body>
 		<p id="demo"></p>
-		<p id="p2"></p>
 	</body>
 	<script>
-	var rows=6;
-	var columns=6;
+	var rows=8;
+	var columns=8;
 	var text="";
 	var l = 0;
 	for (j=0; j<columns; j++)
@@ -14,11 +13,9 @@
 		{
 			l++;
 			text+= "<button id=\"" + l.toString() + "\"onClick=\"mine_function(" + l.toString() + ")\">M</button>";
-			
 		}
 		text+= "<br>"
 	}
-	// text += mine_number.toString();
 	document.getElementById("demo").innerHTML = text;
 	function mine_function(l){
 		var threshold = 0.2;
