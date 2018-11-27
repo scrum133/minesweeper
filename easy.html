@@ -1,0 +1,21 @@
+<html>
+	<body>
+		<p id="demo"></p>
+	</body>
+	<script>
+	var rows=6;
+	var columns=6;
+	var text="";
+	var l = 0;
+	for (j=0; j<columns; j++)
+	{
+		for (i=0; i<rows; i++)
+		{
+			l++;
+			text+= "<button id=>" + l.toPrecision(3) + "</button>"
+		}
+		text+= "<br>"
+	}
+	document.getElementById("demo").innerHTML = text;
+	</script>
+</html>
